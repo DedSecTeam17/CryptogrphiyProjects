@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="521.0" style="-fx-background-color: #ECECEC;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayFair_Encryption_Controller">
+    <children>
+        <JFXTabPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="521.0">
+            <tabs>
+                <Tab text="التشفير الحالي">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <JFXTextField fx:id="play_fair_key" focusColor="#1ba39c" labelFloat="true" layoutX="133.0" layoutY="164.0" prefHeight="25.0" prefWidth="254.0" promptText="key" unFocusColor="#86e2d5" />
+                                <JFXButton fx:id="play_fair_decry" buttonType="RAISED" layoutX="131.0" layoutY="281.0" prefHeight="49.0" prefWidth="130.0" style="-fx-border-color: #86e2d5; -fx-border-radius: 3px;" styleClass="btn" stylesheets="@../css/vbox.css" text=" ">
+                           <graphic>
+                                        <ImageView fitHeight="41.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../picture/unlock'.png" />
+                                            </image>
+                                        </ImageView>
+                           </graphic>
+                                </JFXButton>
+                                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="186.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../picture/logo.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="400.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../picture/key.png" />
+                                    </image>
+                                </ImageView>
+                                <JFXTextField fx:id="play_fair_message" focusColor="#1ba39c" labelFloat="true" layoutX="131.0" layoutY="239.0" prefHeight="25.0" prefWidth="256.0" promptText="Message" unFocusColor="#86e2d5" />
+                                <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="400.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../picture/message.png" />
+                                    </image>
+                                </ImageView>
+                                <JFXButton fx:id="play_fair_encry" buttonType="RAISED" layoutX="271.0" layoutY="281.0" prefHeight="49.0" prefWidth="130.0" style="-fx-border-color: #86e2d5; -fx-border-radius: 3px;" styleClass="btn" stylesheets="@../css/vbox.css" text=" ">
+                           <graphic>
+                                        <ImageView fitHeight="41.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../picture/lock.png" />
+                                            </image>
+                                        </ImageView>
+                           </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="shuffle_real" buttonType="RAISED" layoutX="131.0" layoutY="343.0" prefHeight="51.0" prefWidth="273.0" style="-fx-border-color: #86e2d5; -fx-border-radius: 3px;" styleClass="btn" stylesheets="@../css/vbox.css" text=" ">
+                                    <graphic>
+                                        <ImageView fitHeight="41.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../picture/shuffle.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="التشفير باستخدام الملفات">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Pane layoutX="401.0" layoutY="14.0" prefHeight="335.0" prefWidth="111.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <VBox layoutX="6.0" prefHeight="337.0" prefWidth="103.0">
+                                            <children>
+                                                <JFXButton fx:id="play_fair_upload_file" buttonType="RAISED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="104.0" ripplerFill="#f9690e" styleClass="button" stylesheets="@../css/vbox.css" text=" " textFill="WHITE">
+                                                    <graphic>
+                                                        <ImageView fitHeight="34.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../picture/upload_image.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <font>
+                                                        <Font name="Algerian" size="12.0" />
+                                                    </font>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND" />
+                                                    </cursor>
+                                                </JFXButton>
+                                                <Pane accessibleText="caeser_indicater" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.5" prefWidth="87.0" style="-fx-background-color: #ECECEC;" />
+                                                <JFXButton fx:id="play_fair_save_edited_file" buttonType="RAISED" prefHeight="48.0" prefWidth="103.0" stylesheets="@../css/vbox.css" text=" ">
+                                                    <graphic>
+                                                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../picture/save.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND" />
+                                                    </cursor>
+                                                </JFXButton>
+                                                <Pane accessibleText="caeser_indicater" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.5" prefWidth="87.0" style="-fx-background-color: #ECECEC;" />
+                                                <JFXButton fx:id="play_fair_delete_file_contetn" buttonType="RAISED" prefHeight="48.0" prefWidth="103.0" stylesheets="@../css/vbox.css" text=" ">
+                                                    <graphic>
+                                                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../picture/trash.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND" />
+                                                    </cursor>
+                                                </JFXButton>
+                                                <Pane accessibleText="caeser_indicater" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.5" prefWidth="87.0" style="-fx-background-color: #ECECEC;" />
+                                                <JFXButton fx:id="play_fair_decry_file" buttonType="RAISED" prefHeight="48.0" prefWidth="105.0" ripplerFill="#f9690e" styleClass="button" stylesheets="@../css/vbox.css" text=" " textFill="WHITE">
+                                                    <graphic>
+                                                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../picture/unlock'.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND" />
+                                                    </cursor>
+                                                </JFXButton>
+                                                <Pane accessibleText="caeser_indicater" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.5" prefWidth="87.0" style="-fx-background-color: #ECECEC;" />
+                                                <JFXButton fx:id="play_fair_encry_file" buttonType="RAISED" prefHeight="48.0" prefWidth="104.0" ripplerFill="#f9690e" styleClass="button" stylesheets="@../css/vbox.css" text=" " textFill="WHITE">
+                                                    <graphic>
+                                                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../picture/lock.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND" />
+                                                    </cursor>
+                                                </JFXButton>
+                                                <Pane accessibleText="caeser_indicater" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.5" prefWidth="87.0" style="-fx-background-color: #ECECEC;" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </Pane>
+                                <Pane layoutX="9.0" layoutY="14.0" prefHeight="335.0" prefWidth="383.0" style="-fx-background-color: white;">
+                                    <cursor>
+                                        <Cursor fx:constant="OPEN_HAND" />
+                                    </cursor>
+                                    <children>
+                                        <Label fx:id="file_path" layoutX="24.0" layoutY="14.0" text="file path:" />
+                                        <JFXTextField fx:id="play_fair_files_key" focusColor="#1ba39c" labelFloat="true" layoutX="9.0" layoutY="31.0" prefHeight="25.0" prefWidth="368.0" unFocusColor="#86e2d5">
+                                            <cursor>
+                                                <Cursor fx:constant="TEXT" />
+                                            </cursor>
+                                        </JFXTextField>
+                                        <TextArea fx:id="play_fair_file_result" layoutX="9.0" layoutY="80.0" prefHeight="250.0" prefWidth="369.0" />
+                                    </children>
+                                </Pane>
+                                <Pane layoutX="7.0" layoutY="369.0" prefHeight="92.0" prefWidth="508.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <JFXButton fx:id="shuffle" layoutX="398.0" layoutY="17.0">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../picture/shuffle.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXTextField fx:id="string_size" focusColor="#1ba39c" labelFloat="true" layoutX="14.0" layoutY="17.0" prefHeight="25.0" prefWidth="368.0" unFocusColor="#86e2d5">
+                                            <cursor>
+                                                <Cursor fx:constant="TEXT" />
+                                            </cursor>
+                                        </JFXTextField>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+    </children>
+</AnchorPane>

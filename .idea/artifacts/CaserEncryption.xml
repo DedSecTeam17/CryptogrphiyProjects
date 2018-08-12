@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="CaserEncryption">
+    <output-path>$PROJECT_DIR$/out/artifacts/CaserEncryption</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="CipherSecure" />
+        <option name="vendor" value="CipherSecure" />
+        <option name="version" value="1" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="CaserEncryption.jar">
+        <element id="module-output" name="CaserEncryption" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="library" level="project" name="jfoenix-8.0.4" />
+      </element>
+    </root>
+  </artifact>
+</component>

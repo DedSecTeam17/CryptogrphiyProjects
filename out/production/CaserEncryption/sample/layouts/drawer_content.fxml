@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="114.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/encryption.png" />
+         </image>
+      </ImageView>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Pane accessibleText="home_indicater" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="5.0" />
+            <JFXButton fx:id="red1" accessibleText="home" buttonType="RAISED" prefHeight="100.0" prefWidth="200.0" styleClass="button" stylesheets="@../css/vbox.css" text="الرئيسيه              ">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Pane accessibleText="caeser_indicater" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.5" prefWidth="200.0" style="-fx-background-color: gray;" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Pane accessibleText="caeser_indicater" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="5.0" />
+            <JFXButton fx:id="red" accessibleText="caser_sipher" buttonType="RAISED" prefHeight="100.0" prefWidth="200.0" styleClass="button" stylesheets="@../css/vbox.css" text="تشفير القيصر        ">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/shiled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Pane prefHeight="0.5" prefWidth="200.0" style="-fx-background-color: gray;" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="5.0" />
+            <JFXButton fx:id="yellow" accessibleText="rail_fence" buttonType="RAISED" prefHeight="100.0" prefWidth="199.0" styleClass="button" stylesheets="@../css/vbox.css" text="تشفير ريل فينس">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/shiled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Pane prefHeight="0.5" prefWidth="200.0" style="-fx-background-color: gray;" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="5.0" />
+            <JFXButton fx:id="yellow1" accessibleText="play_fair" buttonType="RAISED" prefHeight="100.0" prefWidth="199.0" styleClass="button" stylesheets="@../css/vbox.css" text="تشفير بلي فير    ">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/shiled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Pane prefHeight="0.5" prefWidth="200.0" style="-fx-background-color: gray;" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</VBox>

@@ -1,0 +1,21 @@
+-jfx-list-cell:selected{
+
+    -fx-background-color: #3d0c91;
+}
+
+
+
+.mylistview{
+
+}
+-jfx-list-cell{
+    -fx-background-insets: 0.0;
+}
+
+-jfx-list-cell -jfx-rippler{
+    -fx-rippler-fill:BLUE;
+}
+
+-jfx-list-cell:hover{
+    -fx-background-color: #1bd79c;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="521.0" style="-fx-background-color: #ECECEC;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Welcome">
+   <children>
+      <ImageView fitHeight="91.0" fitWidth="119.0" layoutX="199.0" layoutY="222.0">
+         <image>
+            <Image url="@../picture/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="238.0" layoutY="52.0">
+         <image>
+            <Image url="@../picture/fire_wall.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="163.0" layoutY="140.0">
+         <image>
+            <Image url="@../picture/appicom.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="309.0" layoutY="140.0">
+         <image>
+            <Image url="@../picture/pwer_off.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="78.0" layoutX="173.0" layoutY="88.0" rotate="-45.0">
+         <image>
+            <Image url="@../picture/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="75.0" layoutX="272.0" layoutY="96.0" rotate="41.6">
+         <image>
+            <Image url="@../picture/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="69.0" layoutX="263.0" layoutY="186.0" rotate="135.0">
+         <image>
+            <Image url="@../picture/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="68.0" layoutX="174.0" layoutY="184.0" rotate="-131.8">
+         <image>
+            <Image url="@../picture/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="208.0" layoutY="112.0">
+         <image>
+            <Image url="@../picture/sync.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="159.0" layoutY="313.0" text="SecureSync" textFill="#f9690e">
+         <font>
+            <Font name="Agency FB" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
