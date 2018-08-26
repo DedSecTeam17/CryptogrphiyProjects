@@ -75,7 +75,7 @@ import java.awt.*;
     // Encryption: takes input (all upper-case), encodes it, and returns output
     private String Encryption(String in){
 
-//        group character into 2 half if character is duplicated add x to first duplicated and move on
+//        group character into 2 half if character is duplicated add.png x to first duplicated and move on
 
 
         length = (int) in.length() / 2 + in.length() % 2;
@@ -94,9 +94,9 @@ import java.awt.*;
         // adds an x to the last Blocks, if necessary
         String[] Blocks = new String[length];
         for(int j = 0; j < length ; j++){
-//            if the half result not equals then add x at the end like 4 and 3 character then add x at last
+//            if the half result not equals then add.png x at the end like 4 and 3 character then add.png x at last
 
-//            if counter at last of character mohamed size 3==index(3) and 6/2 ==3  then  add x
+//            if counter at last of character mohamed size 3==index(3) and 6/2 ==3  then  add.png x
             if(j == (length - 1) && in.length() / 2 == (length - 1))
                 in = in + "X";
 
@@ -124,7 +124,7 @@ import java.awt.*;
             char b = di[i].charAt(1);
 //            using the table get the points of character and do changes over them
 //            example let`s consider      m(r1,c1)        o(r2,c2)   from the table become like this m(0,0) m(0,1)
-//            from this example r1==r2 that mean they are in the same row then shift right by add 1 into point for column then m(0,1) and o(0,2)
+//            from this example r1==r2 that mean they are in the same row then shift right by add.png 1 into point for column then m(0,1) and o(0,2)
 //            and if them in diff row`s then we get the cut point for them by change col point between them example
 //            n(0,2)   i(2,0)    become new n(2,2)  new i(0,0)
             int r1 = (int) getArrayCellPoints(a).getX();

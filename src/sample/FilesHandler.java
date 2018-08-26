@@ -1,11 +1,7 @@
 package sample;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.stage.FileChooser;
-import javafx.stage.Window;
 
-import javax.swing.*;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,11 +12,18 @@ public abstract class FilesHandler {
     public void AddMessageIntoFile(String filePath, String Message) throws IOException {
         PrintWriter out = new PrintWriter(new FileWriter(filePath, true));
         out.append(Message);
+
         out.close();
     }
     public void OverWriteMessageIntoFile(String filePath, String Message) throws IOException {
-        FileWriter out = new FileWriter(new File(filePath),false);
-        out.write(Message);
+        PrintWriter out = new PrintWriter(new File(filePath));
+//        OutputStreamWriter outputStreamWriter=new OutputStreamWriter(new FileOutputStream(filePath));
+//        outputStreamWriter.write(Message);
+//        outputStreamWriter.flush();
+//        outputStreamWriter.flush();
+        out.println(Message);
+
+
         out.close();
     }
     public String ReadMessageFromFile(String filePath) throws FileNotFoundException {

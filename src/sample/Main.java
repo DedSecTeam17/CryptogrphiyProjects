@@ -23,21 +23,21 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("layouts/root.fxml"));
         primaryStage.setTitle("CipherSecure");
         primaryStage.getIcons().add(new Image("sample/picture/appicom.png"));
-        primaryStage.setScene(new Scene(root, 559, 506));
+        primaryStage.setScene(new Scene(root, 800, 600));
 //        primaryStage.setFullScreen(false);
 //        primaryStage.setMaxHeight(600  );
 //        primaryStage.setMaxWidth(400);
 //        primaryStage.setMinHeight(600);
 //        primaryStage.setMinWidth(400);
-        String title = "Congratulations sir";
-        String message = "You've successfully created your first Tray Notification";
-
-
-        TrayNotification tray = new TrayNotification();
-
-        tray.setTitle(title);
-        tray.setMessage(message);
-        tray.showAndWait();
+//        String title = "Congratulations sir";
+//        String message = "You've successfully created your first Tray Notification";
+//
+//
+//        TrayNotification tray = new TrayNotification();
+//
+//        tray.setTitle(title);
+//        tray.setMessage(message);
+//        tray.showAndWait();
         primaryStage.show();
 
 //        CaserAlgorithm caserEncryption=new CaserAlgorithm();

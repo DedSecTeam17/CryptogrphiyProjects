@@ -33,23 +33,7 @@ public class RailFenceEncryptionController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        fence_save_edited_file.setOnAction(event -> {
-            try {
-                 RailFenceViewModel.getInstance().saveEditOnFile(fence_file_result,messageFilePath);
-                messageFromFile=fence_file_result.getText();
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        fence_delete_file_contetn.setOnAction(event -> {
-            try {
-                 RailFenceViewModel.getInstance().deleteAllFileContent(messageFilePath,fence_file_result);
-                messageFromFile="";
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
         fence_encry.setOnAction(event -> {
              RailFenceViewModel.getInstance().bindRealEncryption(fence_message,fence_key);
         });
@@ -58,6 +42,24 @@ public class RailFenceEncryptionController implements Initializable {
 
                 }
         );
+
+        fence_save_edited_file.setOnAction(event -> {
+            try {
+                RailFenceViewModel.getInstance().saveEditOnFile(fence_file_result,messageFilePath);
+                messageFromFile=fence_file_result.getText();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        fence_delete_file_contetn.setOnAction(event -> {
+            try {
+                RailFenceViewModel.getInstance().deleteAllFileContent(messageFilePath,fence_file_result);
+                messageFromFile="";
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
         fence_upload_file.setOnAction(event -> {
             try {
                 Map<String,String> file_meta_data=  RailFenceViewModel.getInstance().bindUploadFile(fence_file_result,file_path);

@@ -15,16 +15,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="521.0" style="-fx-background-color: #ECECEC;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane minHeight="-Infinity" prefHeight="600.0" prefWidth="747.0" style="-fx-background-color: #ECECEC;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <JFXTabPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="521.0">
+      <JFXTabPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="747.0">
          <tabs>
             <Tab text="التشفير الحالي">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="747.0">
                      <children>
-                        <JFXTextField fx:id="key" focusColor="#1ba39c" layoutX="133.0" layoutY="164.0" prefHeight="25.0" prefWidth="254.0" promptText="key" unFocusColor="#86e2d5" />
-                        <JFXButton fx:id="decry" buttonType="RAISED" layoutX="133.0" layoutY="281.0" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #86e2d5;" styleClass="button" stylesheets="@../css/vbox.css" text=" ">
+                        <JFXTextField fx:id="key" focusColor="#1ba39c" layoutX="218.0" layoutY="219.0" prefHeight="25.0" prefWidth="254.0" promptText="key" unFocusColor="#86e2d5" />
+                        <JFXButton fx:id="decry" buttonType="RAISED" layoutX="218.0" layoutY="336.0" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #86e2d5;" styleClass="button" stylesheets="@../css/vbox.css" text=" ">
                            <graphic>
                               <ImageView fitHeight="41.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -33,23 +33,23 @@
                               </ImageView>
                            </graphic>
                         </JFXButton>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="186.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../picture/logo.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="400.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="485.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../picture/key.png" />
                            </image>
                         </ImageView>
-                        <JFXTextField fx:id="message" focusColor="#1ba39c" layoutX="131.0" layoutY="239.0" prefHeight="25.0" prefWidth="256.0" promptText="message" unFocusColor="#86e2d5" />
-                        <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="400.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+                        <JFXTextField fx:id="message" focusColor="#1ba39c" layoutX="216.0" layoutY="294.0" prefHeight="25.0" prefWidth="256.0" promptText="message" unFocusColor="#86e2d5" />
+                        <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="485.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../picture/message.png" />
                            </image>
                         </ImageView>
-                        <JFXButton fx:id="encry" buttonType="RAISED" layoutX="287.0" layoutY="281.0" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #86e2d5;" styleClass="button" stylesheets="@../css/vbox.css" text=" ">
+                        <JFXButton fx:id="encry" buttonType="RAISED" layoutX="372.0" layoutY="336.0" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #86e2d5;" styleClass="button" stylesheets="@../css/vbox.css" text=" ">
                            <graphic>
                               <ImageView fitHeight="41.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -68,9 +68,9 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Pane layoutX="401.0" layoutY="14.0" prefHeight="335.0" prefWidth="111.0" style="-fx-background-color: white;">
+                        <Pane layoutX="608.0" layoutY="11.0" prefHeight="541.0" prefWidth="111.0" style="-fx-background-color: white;">
                            <children>
-                              <VBox layoutX="6.0" prefHeight="337.0" prefWidth="103.0">
+                              <VBox layoutX="6.0" prefHeight="337.0" prefWidth="104.0">
                                  <children>
                                     <JFXButton fx:id="upload_file" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="104.0" ripplerFill="#f9690e" styleClass="button" stylesheets="@../css/vbox.css" text=" " textFill="WHITE">
                                        <graphic>
@@ -144,13 +144,13 @@
                               </VBox>
                            </children>
                         </Pane>
-                        <Pane layoutX="9.0" layoutY="14.0" prefHeight="335.0" prefWidth="383.0" style="-fx-background-color: white;">
+                        <Pane layoutX="9.0" layoutY="14.0" prefHeight="541.0" prefWidth="584.0" style="-fx-background-color: white;">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor>
                            <children>
                               <Label fx:id="file_path" layoutX="24.0" layoutY="14.0" text="file path:" />
-                              <TextArea fx:id="file_result" focusTraversable="false" layoutX="7.0" layoutY="69.0" prefHeight="244.0" prefWidth="358.0" styleClass="text-area" stylesheets="@../css/vbox.css">
+                              <TextArea fx:id="file_result" focusTraversable="false" layoutX="7.0" layoutY="69.0" prefHeight="218.0" prefWidth="559.0" styleClass="text-area" stylesheets="@../css/vbox.css">
                                  <font>
                                     <Font name="Agency FB" size="14.0" />
                                  </font>
@@ -161,7 +161,7 @@
                                     <Blend />
                                  </effect>
                               </TextArea>
-                              <JFXTextField fx:id="files_key" focusColor="#1ba39c" labelFloat="true" layoutX="7.0" layoutY="31.0" prefHeight="25.0" prefWidth="359.0" unFocusColor="#86e2d5">
+                              <JFXTextField fx:id="files_key" focusColor="#1ba39c" labelFloat="true" layoutX="7.0" layoutY="31.0" prefHeight="25.0" prefWidth="558.0" unFocusColor="#86e2d5">
                                  <cursor>
                                     <Cursor fx:constant="TEXT" />
                                  </cursor>

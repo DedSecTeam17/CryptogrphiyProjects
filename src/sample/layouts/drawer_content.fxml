@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="114.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -66,7 +66,7 @@
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
             <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="5.0" />
-            <JFXButton fx:id="yellow1" accessibleText="play_fair" buttonType="RAISED" prefHeight="100.0" prefWidth="199.0" styleClass="button" stylesheets="@../css/vbox.css" text="تشفير بلي فير    ">
+            <JFXButton fx:id="yellow1" accessibleText="play_fair" buttonType="RAISED" prefHeight="100.0" prefWidth="199.0" styleClass="button" stylesheets="@../css/vbox.css" text="بولي الفاباتيك   ">
                <effect>
                   <DropShadow />
                </effect>
