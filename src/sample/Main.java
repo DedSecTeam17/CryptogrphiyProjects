@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.omg.PortableInterceptor.SUCCESSFUL;
-import tray.notification.TrayNotification;
+
 
 import javax.management.Notification;
 
@@ -20,7 +20,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("layouts/root.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../sample/layouts/root.fxml"));
         primaryStage.setTitle("CipherSecure");
         primaryStage.getIcons().add(new Image("sample/picture/appicom.png"));
         primaryStage.setScene(new Scene(root, 800, 600));

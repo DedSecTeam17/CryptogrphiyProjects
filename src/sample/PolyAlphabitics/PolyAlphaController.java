@@ -89,6 +89,7 @@ public class PolyAlphaController implements Initializable {
         decry.setDisable(true);
         try {
             ruleList = RuleModel.getInstance().getAllRules();
+        
         } catch (SQLException e) {
             e.printStackTrace();
         }

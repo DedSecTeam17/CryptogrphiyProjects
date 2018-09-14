@@ -66,7 +66,7 @@
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
             <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="5.0" />
-            <JFXButton fx:id="yellow1" accessibleText="play_fair" buttonType="RAISED" prefHeight="100.0" prefWidth="199.0" styleClass="button" stylesheets="@../css/vbox.css" text="بولي الفاباتيك   ">
+            <JFXButton fx:id="yellow1" accessibleText="play_fair" buttonType="RAISED" prefHeight="100.0" prefWidth="199.0" styleClass="button" stylesheets="@../css/vbox.css" text="ار اس اي            ">
                <effect>
                   <DropShadow />
                </effect>

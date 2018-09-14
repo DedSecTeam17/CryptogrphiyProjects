@@ -9,7 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Map;
 
-   interface CipherOperations {
+   public interface CipherOperations {
 
 
        void   bindRealEncryption(JFXTextField message, JFXTextField key);

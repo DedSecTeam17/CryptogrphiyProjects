@@ -133,7 +133,6 @@ public class PolyAlphabetsAlgorithm extends FilesHandler {
         }
         return '_';
     }
-
     public String BlockCipher(String Block, List<Rule> rules) {
         StringBuilder BlockCiphered = new StringBuilder();
         for (int i = 0; i < Block.length(); i++) {
@@ -143,7 +142,6 @@ public class PolyAlphabetsAlgorithm extends FilesHandler {
         }
         return BlockCiphered.toString();
     }
-
     public String BlockDeCipher(String Block, List<Rule> rules) {
         StringBuilder BlockDeCiphered = new StringBuilder();
         for (int i = 0; i < Block.length(); i++) {

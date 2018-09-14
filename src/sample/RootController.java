@@ -40,7 +40,7 @@ public class RootController implements Initializable {
             AnchorPane welcome = FXMLLoader.load(getClass().getResource("layouts/welcome.fxml"));
             AnchorPane sample = FXMLLoader.load(getClass().getResource("layouts/CeaserEncryption.fxml"));
             AnchorPane RailFenceEncryption = FXMLLoader.load(getClass().getResource("layouts/RailFenceEncryption.fxml"));
-            AnchorPane PlayFair = FXMLLoader.load(getClass().getResource("layouts/poly_alpha.fxml"));
+            AnchorPane PlayFair = FXMLLoader.load(getClass().getResource("layouts/RSA.fxml"));
             List<AnchorPane> list = new ArrayList<>();
             list.add(welcome);
             list.add(sample);
